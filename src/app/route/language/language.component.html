@@ -1,0 +1,5 @@
+<div id="lang-list" *ngIf="langs">
+<a routerLink="/tech/{{lang.name}}" routerLinkActive="active" *ngFor="let lang of langs">
+<div class="w3-panel w3-card-4 card"><p>{{lang.name}}</p></div>
+</a>
+</div>

@@ -9,12 +9,10 @@
     },
     "scripts": {
         "start": "webpack-dev-server --inline --config config/build/webpack.dev.js --progress --port 3000",
-        "test": "karma start config/test/karma.conf.js",
         "coverage": "npm run lint && karma start config/test/karma.conf.js --coverage=true",
         "lint": "tslint -c config/tslint.json \"src/app/**/*.ts\"",
         "pretest": "npm run lint",
-        "build": "rimraf dist && webpack --config config/build/webpack.prod.js --progress --profile --bail",
-        "server": "node config/server/prod-server.js"
+        "build": "rimraf dist && webpack --config config/build/webpack.prod.js --progress --profile --bail"
     },
     "dependencies": {
         "@angular/common": "^4.3.6",
@@ -47,16 +45,6 @@
         "html-loader": "^0.4.3",
         "html-webpack-plugin": "^2.26.0",
         "istanbul-instrumenter-loader": "^3.0.0",
-        "jasmine-core": "~2.6.2",
-        "jasmine-spec-reporter": "~4.1.0",
-        "karma": "~1.7.0",
-        "karma-chrome-launcher": "~2.1.1",
-        "karma-cli": "~1.0.1",
-        "karma-coverage-istanbul-reporter": "^1.2.1",
-        "karma-jasmine": "~1.1.0",
-        "karma-jasmine-html-reporter": "^0.2.2",
-        "karma-sourcemap-loader": "^0.3.7",
-        "karma-webpack": "^2.0.4",
         "live-server": "1.2.0",
         "loader-utils": "^1.1.0",
         "node-sass": "^4.5.3",
